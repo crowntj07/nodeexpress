@@ -1,0 +1,64 @@
+body {
+    background-image: url("../image/burgershop.jpg");
+    background-size: 100%;
+    background-color:	#009d1a;
+}
+
+.titleText {
+    text-align: center;
+    color: rgb(240, 84, 22);
+    font-size: 100px;
+    font-family: fantasy;
+   
+}
+
+.miniHeading {
+    color: rgb(255, 145, 0);
+    text-align: center;
+    font-size: 38px;
+    font-family: fantasy;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.addBurger {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.krabbyPatty {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.moveMe {
+    text-align: center;
+    margin: 0 auto 3% 0;
+
+}
+
+
+.showBurger {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+
+.devourBurger
+{
+    text-align: center;
+    font-size: 28px;
+    font-family: fantasy;
+
+}
+
+.btn {
+    padding-top: 0px;
+}
+
+p {
+    color: palegoldenrod;
+}
