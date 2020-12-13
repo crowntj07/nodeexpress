@@ -1,8 +1,8 @@
-const connection = require("./connection.js");
-//Select All ORM
-const orm = {
+var connection = require("./connection.js");
+
+var orm = {
     selectAll: function(table, callback) {
-        let queryString = "SELECT * FROM ??;";
+        var queryString = "SELECT * FROM ??;";
         connection.query(queryString, [table], function(err, res) {
             if (err) throw err;
             callback(res);
@@ -10,7 +10,7 @@ const orm = {
     },
     //Insert 
     insertOne: function(gryffindor, hufflepuff, ravenclaw, callback) {
-    const queryString = "INSERT INTO ?? (??) VALUES (?);"
+  var queryString = "INSERT INTO ?? (??) VALUES (?);"
         connection.query(queryString, [gryffindor, hufflepuff, ravenclaw], function(err, slytherin){
             if (err) throw err;
         callback(slytherin);
@@ -18,7 +18,7 @@ const orm = {
     },
     //Update
     updateOne: function(colVal, id, callback) {
-    const queryString = "UPDATE burgers SET devoured='1' WHERE " + id + ";";
+    var queryString = "UPDATE burgers SET devoured='1' WHERE " + id + ";";
         connection.query(queryString, [id], function(err, result) {
       
             if (err) throw err;
@@ -28,12 +28,12 @@ const orm = {
     },
     //Delete
     deleteOne: function(id, callback) {
-        let queryString = "DELETE FROM burgers WHERE " + id + ";";
+       var queryString = "DELETE FROM burgers WHERE " + id + ";";
         connection.query(queryString, [id], function(err, res) {
             if (err) throw err;
             callback(res);
         });
     },
 }
-//Exports ORM
+
 module.exports = orm;

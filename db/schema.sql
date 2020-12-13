@@ -1,9 +1,9 @@
-DROP DATABASE IF EXISTS burgers_db;
+DROP DATABASE IF EXISTS burger_db;
 
-CREATE DATABASE burgers_db;
-USE burgers_db;
+CREATE DATABASE burger_db;
+USE burgershop_db;
 
-CREATE TABLE burgers(
+CREATE TABLE burger_db(
 id INT NOT NULL AUTO_INCREMENT, 
 burger_name VARCHAR(500) NOT NULL,
 devoured BOOLEAN NOT NULL DEFAULT 0, 
